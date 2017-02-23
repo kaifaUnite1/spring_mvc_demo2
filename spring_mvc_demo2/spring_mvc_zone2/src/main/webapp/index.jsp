@@ -8,5 +8,6 @@
 </head>
 <body>
 index
+function 1
 </body>
 </html>
