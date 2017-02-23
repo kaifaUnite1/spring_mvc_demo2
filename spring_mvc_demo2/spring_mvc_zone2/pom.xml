@@ -7,19 +7,60 @@
     <artifactId>spring_mvc_demo2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.julong.ssm</groupId>
+
   <artifactId>spring_mvc_zone2</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+
   <packaging>war</packaging>
   <name>spring_mvc_zone2 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+   		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>  
+           		<groupId>javax.servlet.jsp.jstl</groupId>  
+           		<artifactId>jstl-api</artifactId>  
+          		<version>1.2</version>  
+           		<exclusions>  
+               		<exclusion>  
+                   		<groupId>javax.servlet</groupId>  
+                   		<artifactId>servlet-api</artifactId>  
+              		</exclusion>  
+               		<exclusion>  
+                   		<groupId>javax.servlet.jsp</groupId>  
+                   		<artifactId>jsp-api</artifactId>  
+               		    </exclusion>  
+           		</exclusions>  
+       		</dependency>  
+  
+       		<dependency>  
+           		<groupId>org.glassfish.web</groupId>  
+           		<artifactId>jstl-impl</artifactId>  
+           		<version>1.2</version>  
+           		<exclusions>  
+               		<exclusion>  
+                   		<groupId>javax.servlet</groupId>  
+                   		<artifactId>servlet-api</artifactId>  
+               		</exclusion>  
+               		<exclusion>  
+                   		<groupId>javax.servlet.jsp</groupId>  
+                   		<artifactId>jsp-api</artifactId>  
+               		</exclusion>  
+               		<exclusion>  
+                   		<groupId>javax.servlet.jsp.jstl</groupId>  
+                   		<artifactId>jstl-api</artifactId>  
+               		</exclusion>  
+          		 </exclusions>  
+       		</dependency> 
   </dependencies>
   <build>
     <finalName>spring_mvc_zone2</finalName>
