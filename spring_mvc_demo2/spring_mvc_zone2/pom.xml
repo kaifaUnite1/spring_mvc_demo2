@@ -75,6 +75,8 @@
 	    <repository>
 	        <id></id>
 	    </repository>
-	    <snapshotRepository></snapshotRepository>
+	    <snapshotRepository>
+	        <id></id>
+	    </snapshotRepository>
 	</distributionManagement>
 </project>
