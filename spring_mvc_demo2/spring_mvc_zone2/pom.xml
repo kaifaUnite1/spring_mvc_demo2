@@ -72,6 +72,6 @@
 		<finalName>spring_mvc_zone2</finalName>
 	</build>
 	<distributionManagement>
-	    
+	    <repository></repository>
 	</distributionManagement>
 </project>
