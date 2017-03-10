@@ -74,6 +74,8 @@
 	<distributionManagement>
 	    <repository>
 	        <id></id>
+	        <name></name>
+	        <url></url>
 	    </repository>
 	    <snapshotRepository>
 	        <id></id>
